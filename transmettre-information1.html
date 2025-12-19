@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours : Systèmes de transmission d'informations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav li {
+            margin: 0;
+        }
+        nav a {
+            display: block;
+            padding: 15px 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        section:nth-child(even) {
+            background-color: #e9f7ff;
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #0056b3;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            display: block;
+        }
+        iframe {
+            display: block;
+            margin: 30px auto;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 30px;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            header {
+                padding: 30px 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cours : Systèmes de transmission d'informations</h1>
+    <p>Par Professeur - Décembre 2025</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#principes">Principes généraux</a></li>
+        <li><a href="#guidee">Propagation guidée</a></li>
+        <li><a href="#libre">Propagation libre</a></li>
+        <li><a href="#identifier">Identifier dans la vie courante</a></li>
+        <li><a href="#activites">Activités pratiques</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+</nav>
+
+<section id="introduction">
+    <h2>Introduction</h2>
+    <p>Dans ce cours, nous allons étudier en détail comment mettre en œuvre un système de transmission d'informations par propagation libre ou guidée. Nous identifierons également les éléments principaux des systèmes de transmission d'informations utilisés dans la vie courante. La transmission d'informations est un pilier de notre société moderne, permettant la communication via des appareils comme les téléphones, internet, la télévision, et bien plus. Elle repose sur deux modes principaux : la propagation libre (sans fil) et la propagation guidée (avec un support physique comme des câbles).</p>
+    <p>Pour mieux comprendre, explorons d'abord les bases avant de plonger dans les détails techniques.</p>
+    
+    <img src="https://jetudielacom.com/wp-content/uploads/2238810387.png" alt="Schéma général de la communication">
+
+    <p>Regardez cette vidéo d'introduction sur les signaux et la transmission d'informations :</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FpseOa5J_ls?si=Sgno18uYlTJ4ga8h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></section>
+
+<section id="principes">
+    <h2>Principes généraux de la transmission d'informations</h2>
+    <p>Un système de transmission d'informations est fondamentalement composé de trois éléments principaux : l'émetteur, qui convertit l'information originale (comme une voix ou des données) en un signal adapté à la transmission ; le milieu de transmission, qui achemine ce signal d'un point à un autre ; et le récepteur, qui reçoit le signal et le reconvertit en information utilisable.</p>
+    <p>Ce processus implique souvent une modulation du signal pour l'adapter au milieu, et une démodulation à l'arrivée. Des perturbations comme le bruit ou les interférences peuvent affecter la qualité, d'où l'importance de techniques de correction d'erreurs.</p>
+    
+    <img src="https://physique.neveuj.fr/wp-content/uploads/2020/01/chaine-de-transmission-1.png" alt="Chaîne de transmission d'une information">
+
+    <p>Pour une explication détaillée de la chaîne de transmission :</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7i-dAdK2QUw" title="La chaîne de transmission d'informations (Physique-Chimie)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+<section id="guidee">
+    <h2>Propagation guidée</h2>
+    <p>La propagation guidée utilise un support physique pour diriger le signal, évitant ainsi les dispersions dans l'espace libre. Les exemples incluent les câbles coaxiaux, les câbles à paires torsadées et surtout les fibres optiques, qui transmettent la lumière au lieu d'un courant électrique.</p>
+    <p>Dans une fibre optique, le principe repose sur la réflexion totale interne : la lumière est piégée à l'intérieur du cœur de la fibre et se propage sur de longues distances avec peu de pertes. Cela permet des débits très élevés, idéaux pour les réseaux internet haut débit.</p>
+    
+    <img src="https://www.fibermall.com/blog/wp-content/uploads/2024/07/6-4.png" alt="Fonctionnement d'un câble à fibre optique">
+
+    <p>Exemples dans la vie courante : les câbles Ethernet pour les connexions internet filaires, les fibres optiques pour la FTTH (Fiber To The Home), et les câbles coaxiaux pour la distribution TV par câble.</p>
+    
+    <img src="https://tpe-informations-ondes.home.blog/wp-content/uploads/2018/12/fibre.jpg" alt="Fibre optique en propagation guidée">
+
+    <h3>Mise en œuvre</h3>
+    <p>Pour implémenter un système guidé : 1. Sélectionnez le type de câble approprié (cuivre pour des distances courtes, fibre pour longues distances). 2. Connectez l'émetteur au câble via des connecteurs adaptés. 3. Assurez une isolation contre les interférences électromagnétiques. 4. Respectez les limites de longueur pour minimiser l'atténuation du signal. Avantages : haute fiabilité, sécurité accrue contre les écoutes, faible sensibilité aux interférences. Inconvénients : coût d'installation élevé, manque de mobilité.</p>
+    
+    <p>Vidéo expliquant la propagation guidée par fibre optique :</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tH2H9BkENLI" title="Propagation guidée par fibre optique (Physique-Chimie)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+<section id="libre">
+    <h2>Propagation libre</h2>
+    <p>La propagation libre se fait sans support physique, utilisant l'espace comme milieu, typiquement via des ondes électromagnétiques comme les ondes radio, micro-ondes, infrarouges ou visibles.</p>
+    <p>Les ondes se propagent en ligne droite mais peuvent être diffractées ou réfléchies, ce qui permet de contourner certains obstacles. Cependant, elles sont sujettes à l'atténuation due à la distance (loi en 1/r²) et aux interférences environnementales.</p>
+    
+    <img src="https://i0.wp.com/www.lesalexiens.fr/wp-content/uploads/2019/10/image005.png?resize=600%2C408&ssl=1" alt="Propagation des ondes WiFi">
+
+    <p>Exemples dans la vie courante : le Wi-Fi (2.4 GHz ou 5 GHz), le Bluetooth pour les connexions courtes, les télécommandes infrarouges, et les réseaux mobiles (4G/5G) utilisant des ondes radio.</p>
+    
+    <img src="https://external-preview.redd.it/how-wifi-spreads-v0-b2Z1N3psNWZkNmFkMWkB4Gpn09286Kb7J3fYFnebGiKpzquG-XzjNprjnWUE.png?format=pjpg&auto=webp&s=8662193614a880f0b45b4f76b2807f3015ae6094" alt="Comment le WiFi se propage">
+
+    <h3>Mise en œuvre</h3>
+    <p>Pour un système libre : 1. Choisissez la fréquence optimale (ex. : 2.4 GHz pour une meilleure pénétration des obstacles). 2. Installez des antennes adaptées pour l'émission et la réception. 3. Gérez les interférences via des canaux dédiés ou des protocoles comme le CSMA/CA. 4. Respectez les réglementations sur la puissance d'émission. Avantages : grande mobilité, déploiement rapide. Inconvénients : vulnérabilité aux interférences, sécurité moindre sans chiffrement.</p>
+    
+    <p>Vidéo sur la propagation libre et guidée (avec expériences) :</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gT7G-mnTmSs" title="Propagation libre et guidée (Physique-Chimie)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+<section id="identifier">
+    <h2>Identifier les éléments principaux dans la vie courante</h2>
+    <p>Examinons des systèmes courants pour identifier émetteur, milieu et récepteur.</p>
+    
+    <h3>Téléphone mobile</h3>
+    <p>Émetteur : Microphone et circuit de modulation dans le téléphone. Milieu : Ondes radio (propagation libre) via des tours relais. Récepteur : Antenne et démodulateur dans l'appareil destinataire. Les réseaux 5G utilisent des fréquences plus élevées pour des débits supérieurs.</p>
+    
+    <img src="https://i.ytimg.com/vi/g3aETl-9dfw/maxresdefault.jpg" alt="Transmission ondes radio téléphone mobile">
+
+    <h3>Internet domestique</h3>
+    <p>Émetteur : Modem ou routeur. Milieu : Câble Ethernet (guidé) ou Wi-Fi (libre). Récepteur : Carte réseau de l'ordinateur. Les routeurs modernes supportent le Wi-Fi 6 pour une meilleure efficacité.</p>
+    
+    <img src="https://sf1.cnetfrance.fr/wp-content/uploads/cnet/2023/05/guide-achat-routeurs-wifi-770-365x200.jpg" alt="Routeur WiFi domestique">
+
+    <h3>Télévision</h3>
+    <p>Émetteur : Station de diffusion ou satellite. Milieu : Ondes hertziennes (libre) ou câble (guidé). Récepteur : Antenne ou décodeur TV. La TNT (Télévision Numérique Terrestre) utilise la propagation libre.</p>
+    
+    <img src="https://www.tdf.fr/wp-content/uploads/2022/04/Schema-comment-fonctionne-la-TNT-1024x633.jpg" alt="Schéma antenne télévision">
+
+    <p>Vidéo sur la transmission numérique (analogique vs numérique) :</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VxEQUP_ZfUM" title="Signal numérique et analogique : La TNT (Physique-Chimie)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+<section id="activites">
+    <h2>Activités pratiques</h2>
+    <h3>Activité 1 : Identifier un système</h3>
+    <p>Choisissez un appareil de la vie courante (ex. : enceinte Bluetooth). Identifiez l'émetteur (circuit Bluetooth de l'appareil source), le milieu (ondes radio propagation libre) et le récepteur (antenne de l'enceinte). Discutez des avantages et limitations.</p>
+    
+    <h3>Activité 2 : Mise en œuvre simple</h3>
+    <p>Installez un réseau Wi-Fi simple en classe. Utilisez un outil comme un analyseur de signal pour mesurer la force à différentes distances et obstacles. Analysez les résultats pour comprendre l'atténuation.</p>
+    
+    <p>Vidéo pratique avec expériences sur propagation libre et guidée :</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gT7G-mnTmSs" title="Expériences propagation libre et guidée (Physique-Chimie)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+<section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>La transmission d'informations, qu'elle soit guidée ou libre, est essentielle à la technologie moderne. Comprendre ces concepts permet de sélectionner la meilleure approche pour chaque scénario, en équilibrant fiabilité, coût et mobilité.</p>
+    <p>Pour approfondir, consultez des ressources en ligne comme Wikipedia sur la transmission de données.</p>
+</section>
+
+</body>
+</html>
